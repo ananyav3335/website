@@ -1,0 +1,131 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4faff; /* Light blue background */
+    color: #333;
+}
+
+/* Box Styling */
+.box {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #ffffff; /* White background for boxes */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    background: linear-gradient(to right, #0077b6, #3a7bd5); /* Gradient */
+    color: #fff;
+    padding: 1.5rem 0;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for header */
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: #ffe135; /* Vibrant yellow for links */
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #ffffff; /* White on hover */
+}
+
+/* Main Section Box */
+main {
+    padding: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Table Styling */
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 90%;
+    background: #ffffff; /* White background for table */
+    border-radius: 8px;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for table */
+}
+
+th, td {
+    border: 1px solid #0077b6; /* Deep blue for borders */
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #38bdf8; /* Vibrant blue for table header */
+    color: #ffffff; /* White text for contrast */
+}
+
+td {
+    background-color: #e0f7fa; /* Light cyan for table cells */
+}
+
+tr:nth-child(even) {
+    background-color: #b2ebf2; /* Light turquoise for alternate rows */
+}
+
+tr:hover {
+    background-color: #81d4fa; /* Light blue on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #3a7bd5; /* Bright blue matching header */
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
